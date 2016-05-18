@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.05-rc2-00020-g9851bd0 Configuration
+# Buildroot 2016.05-rc2-00025-gb09c31b-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -1668,6 +1668,7 @@ BR2_PACKAGE_LIBRINA=y
 # qpid-proton needs a toolchain w/ dynamic library, wchar
 #
 # BR2_PACKAGE_RABBITMQ_C is not set
+BR2_PACKAGE_RINAD=y
 # BR2_PACKAGE_RTMPDUMP is not set
 # BR2_PACKAGE_SLIRP is not set
 # BR2_PACKAGE_SNMPPP is not set
