@@ -12,6 +12,6 @@ LIBRINA_LICENSE = LGPL
 LIBRINA_SUBDIR = librina
 LIBRINA_AUTORECONF = YES
 LIBRINA_AUTORECONF_OPTS = -i -f -Wall
-LIBRINA_CONF_OPTS = --disable-java-bindings --enable-debug --with-sysheaders=/home/vmaffione/git/nxw/irati/linux/usr/include
+LIBRINA_CONF_OPTS = --disable-java-bindings --enable-debug --with-sysheaders=/home/vmaffione/git/nxw/buildroot/output/build/linux-custom/usr/include
 
 $(eval $(autotools-package))
