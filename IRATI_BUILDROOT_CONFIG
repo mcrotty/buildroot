@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.05-rc2-00025-gb09c31b-dirty Configuration
+# Buildroot 2016.05-rc2-00026-g6acb905-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -1669,6 +1669,7 @@ BR2_PACKAGE_LIBRINA=y
 #
 # BR2_PACKAGE_RABBITMQ_C is not set
 BR2_PACKAGE_RINAD=y
+BR2_PACKAGE_RINATOOLS=y
 # BR2_PACKAGE_RTMPDUMP is not set
 # BR2_PACKAGE_SLIRP is not set
 # BR2_PACKAGE_SNMPPP is not set

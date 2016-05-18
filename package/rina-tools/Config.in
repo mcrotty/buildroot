@@ -1,0 +1,6 @@
+config BR2_PACKAGE_RINATOOLS
+        bool "rina-tools"
+        help
+          The rina-tools package is part of the IRATI stack.
+
+          https://github.com/irati/stack
