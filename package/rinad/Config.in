@@ -1,0 +1,6 @@
+config BR2_PACKAGE_RINAD
+        bool "rinad"
+        help
+          The rinad package is part of the IRATI stack.
+
+          https://github.com/irati/stack
