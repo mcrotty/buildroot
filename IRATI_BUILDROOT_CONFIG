@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.05-rc2-00018-g25ba886 Configuration
+# Buildroot 2016.05-rc2-00020-g9851bd0 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -130,6 +130,7 @@ BR2_TOOLCHAIN_BUILDROOT_VENDOR="buildroot"
 #
 # Kernel Header Options
 #
+# BR2_KERNEL_HEADERS_AS_KERNEL is not set
 # BR2_KERNEL_HEADERS_3_2 is not set
 # BR2_KERNEL_HEADERS_3_4 is not set
 # BR2_KERNEL_HEADERS_3_10 is not set
@@ -302,7 +303,47 @@ BR2_ROOTFS_POST_IMAGE_SCRIPT=""
 #
 # Kernel
 #
-# BR2_LINUX_KERNEL is not set
+BR2_LINUX_KERNEL=y
+# BR2_LINUX_KERNEL_LATEST_VERSION is not set
+# BR2_LINUX_KERNEL_CUSTOM_VERSION is not set
+# BR2_LINUX_KERNEL_CUSTOM_TARBALL is not set
+# BR2_LINUX_KERNEL_CUSTOM_GIT is not set
+# BR2_LINUX_KERNEL_CUSTOM_HG is not set
+# BR2_LINUX_KERNEL_CUSTOM_SVN is not set
+BR2_LINUX_KERNEL_CUSTOM_LOCAL=y
+BR2_LINUX_KERNEL_CUSTOM_LOCAL_PATH="/home/vmaffione/git/nxw/irati/linux"
+BR2_LINUX_KERNEL_VERSION="custom"
+# BR2_LINUX_KERNEL_USE_DEFCONFIG is not set
+BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="IRATI_LINUX_CONFIG"
+BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES=""
+BR2_LINUX_KERNEL_BZIMAGE=y
+# BR2_LINUX_KERNEL_VMLINUX is not set
+# BR2_LINUX_KERNEL_IMAGE_TARGET_CUSTOM is not set
+BR2_LINUX_KERNEL_GZIP=y
+# BR2_LINUX_KERNEL_LZ4 is not set
+# BR2_LINUX_KERNEL_LZMA is not set
+# BR2_LINUX_KERNEL_LZO is not set
+# BR2_LINUX_KERNEL_XZ is not set
+# BR2_LINUX_KERNEL_DTS_SUPPORT is not set
+# BR2_LINUX_KERNEL_INSTALL_TARGET is not set
+
+#
+# Linux Kernel Extensions
+#
+# BR2_LINUX_KERNEL_EXT_XENOMAI is not set
+# BR2_LINUX_KERNEL_EXT_RTAI is not set
+# BR2_LINUX_KERNEL_EXT_FBTFT is not set
+
+#
+# Linux Kernel Tools
+#
+# BR2_LINUX_KERNEL_TOOL_CPUPOWER is not set
+# BR2_LINUX_KERNEL_TOOL_PERF is not set
+
+#
+# selftests needs BR2_PACKAGE_BUSYBOX_SHOW_OTHERS
+#
 
 #
 # Target packages
@@ -464,10 +505,7 @@ BR2_PACKAGE_GOOGLE_BREAKPAD_ARCH_SUPPORTS=y
 #
 # BR2_PACKAGE_IOZONE is not set
 # BR2_PACKAGE_KEXEC is not set
-
-#
-# ktap needs a Linux kernel to be built
-#
+# BR2_PACKAGE_KTAP is not set
 
 #
 # latencytop needs a toolchain w/ wchar, threads
@@ -482,10 +520,7 @@ BR2_PACKAGE_GOOGLE_BREAKPAD_ARCH_SUPPORTS=y
 #
 # lttng-babeltrace needs a toolchain w/ wchar, threads
 #
-
-#
-# lttng-modules needs a Linux kernel to be built
-#
+# BR2_PACKAGE_LTTNG_MODULES is not set
 
 #
 # lttng-tools needs a toolchain w/ threads, wchar, dynamic library
@@ -505,10 +540,6 @@ BR2_PACKAGE_GOOGLE_BREAKPAD_ARCH_SUPPORTS=y
 # BR2_PACKAGE_PV is not set
 
 #
-# racehound needs an Linux kernel >= 3.14 to be built
-#
-
-#
 # racehound needs a uClibc or (e)glibc toolchain w/ C++, wchar, dynamic library
 #
 # BR2_PACKAGE_RAMSMP is not set
@@ -521,10 +552,7 @@ BR2_PACKAGE_GOOGLE_BREAKPAD_ARCH_SUPPORTS=y
 #
 # stress-ng needs a glibc toolchain w/ dynamic library, headers >= 3.3
 #
-
-#
-# sysdig needs a toolchain w/ C++, gcc >= 4.7, dynamic library and a Linux kernel to be built
-#
+# BR2_PACKAGE_SYSDIG is not set
 
 #
 # sysprof needs a toolchain w/ wchar, threads
@@ -639,10 +667,7 @@ BR2_PACKAGE_CMAKE_ARCH_SUPPORTS=y
 #
 # ntfs-3g needs a toolchain w/ wchar, threads, dynamic library
 #
-
-#
-# simicsfs needs a Linux kernel to be built
-#
+# BR2_PACKAGE_SIMICSFS is not set
 # BR2_PACKAGE_SP_OOPS_EXTRACT is not set
 # BR2_PACKAGE_SQUASHFS is not set
 
@@ -751,10 +776,7 @@ BR2_PACKAGE_CMAKE_ARCH_SUPPORTS=y
 # freerdp needs a toolchain w/ wchar, dynamic library, threads, C++
 #
 # BR2_PACKAGE_IMAGEMAGICK is not set
-
-#
-# linux-fusion needs a Linux kernel to be built
-#
+# BR2_PACKAGE_LINUX_FUSION is not set
 # BR2_PACKAGE_MESA3D is not set
 # BR2_PACKAGE_OCRAD is not set
 
@@ -879,18 +901,12 @@ BR2_PACKAGE_QT5_JSCORE_AVAILABLE=y
 # BR2_PACKAGE_IOSTAT is not set
 # BR2_PACKAGE_IPMITOOL is not set
 # BR2_PACKAGE_IPMIUTIL is not set
-
-#
-# iqvlinux needs a Linux kernel to be built
-#
+# BR2_PACKAGE_IQVLINUX is not set
 # BR2_PACKAGE_IRDA_UTILS is not set
 # BR2_PACKAGE_IUCODE_TOOL is not set
 # BR2_PACKAGE_KBD is not set
 # BR2_PACKAGE_LCDPROC is not set
-
-#
-# linux-backports needs a Linux kernel to be built
-#
+# BR2_PACKAGE_LINUX_BACKPORTS is not set
 # BR2_PACKAGE_LIRC_TOOLS is not set
 # BR2_PACKAGE_LM_SENSORS is not set
 
@@ -943,14 +959,8 @@ BR2_PACKAGE_QT5_JSCORE_AVAILABLE=y
 # BR2_PACKAGE_READ_EDID is not set
 # BR2_PACKAGE_RFKILL is not set
 # BR2_PACKAGE_RNG_TOOLS is not set
-
-#
-# rtl8188eu needs a Linux kernel to be built
-#
-
-#
-# rtl8821au needs a Linux kernel to be built
-#
+# BR2_PACKAGE_RTL8188EU is not set
+# BR2_PACKAGE_RTL8821AU is not set
 # BR2_PACKAGE_SANE_BACKENDS is not set
 # BR2_PACKAGE_SDPARM is not set
 # BR2_PACKAGE_SETSERIAL is not set
@@ -1128,10 +1138,7 @@ BR2_PACKAGE_ZLIB=y
 BR2_PACKAGE_BOTAN_ARCH_SUPPORTS=y
 # BR2_PACKAGE_BOTAN is not set
 # BR2_PACKAGE_CA_CERTIFICATES is not set
-
-#
-# cryptodev needs a Linux kernel to be built
-#
+# BR2_PACKAGE_CRYPTODEV is not set
 
 #
 # gcr needs a toolchain w/ wchar, threads, dynamic library
@@ -2000,10 +2007,7 @@ BR2_PACKAGE_DHCPCD=y
 # BR2_PACKAGE_IBRDTN_TOOLS is not set
 # BR2_PACKAGE_IBRDTND is not set
 # BR2_PACKAGE_IFTOP is not set
-
-#
-# igh-ethercat needs a Linux kernel to be built
-#
+# BR2_PACKAGE_IGH_ETHERCAT is not set
 
 #
 # igmpproxy needs a toolchain w/ wchar
@@ -2193,10 +2197,7 @@ BR2_PACKAGE_OPENSSH=y
 # BR2_PACKAGE_WVDIAL is not set
 # BR2_PACKAGE_XINETD is not set
 # BR2_PACKAGE_XL2TP is not set
-
-#
-# xtables-addons needs a Linux kernel to be built
-#
+# BR2_PACKAGE_XTABLES_ADDONS is not set
 # BR2_PACKAGE_ZNC is not set
 
 #
@@ -2311,10 +2312,7 @@ BR2_PACKAGE_AUDIT_ARCH_SUPPORTS=y
 # BR2_PACKAGE_AUDIT is not set
 # BR2_PACKAGE_CPULOAD is not set
 # BR2_PACKAGE_CGROUPFS_MOUNT is not set
-
-#
-# emlog needs a Linux kernel to be built
-#
+# BR2_PACKAGE_EMLOG is not set
 # BR2_PACKAGE_FTOP is not set
 # BR2_PACKAGE_GETENT is not set
 # BR2_PACKAGE_HTOP is not set
@@ -2399,10 +2397,7 @@ BR2_TARGET_ROOTFS_CPIO_NONE=y
 # BR2_TARGET_ROOTFS_CPIO_UIMAGE is not set
 # BR2_TARGET_ROOTFS_CRAMFS is not set
 # BR2_TARGET_ROOTFS_EXT2 is not set
-
-#
-# initramfs needs a Linux kernel to be built
-#
+# BR2_TARGET_ROOTFS_INITRAMFS is not set
 
 #
 # iso image needs a Linux kernel and one of grub, grub2 or isolinux to be built
