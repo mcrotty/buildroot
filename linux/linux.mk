@@ -314,6 +314,8 @@ endif
 
 # Compilation. We make sure the kernel gets rebuilt when the
 # configuration has changed.
+# We also generate the user headers (make headers_check), so that
+# they can be used to compile librina
 define LINUX_BUILD_CMDS
 	$(if $(BR2_LINUX_KERNEL_USE_CUSTOM_DTS),
 		cp -f $(call qstrip,$(BR2_LINUX_KERNEL_CUSTOM_DTS_PATH)) $(KERNEL_ARCH_PATH)/boot/dts/)
@@ -323,6 +325,7 @@ define LINUX_BUILD_CMDS
 	fi
 	$(LINUX_BUILD_DTB)
 	$(LINUX_APPEND_DTB)
+	$(LINUX_MAKE_ENV) $(MAKE) $(LINUX_MAKE_FLAGS) -C $(@D) headers_check
 endef
 
 ifeq ($(BR2_LINUX_KERNEL_APPENDED_DTB),y)
