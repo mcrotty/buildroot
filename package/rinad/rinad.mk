@@ -2,7 +2,7 @@
 # rinad                                    #
 ############################################
 
-RINAD_VERSION = master
+RINAD_VERSION = kernel-update
 RINAD_SITE = https://github.com/IRATI/stack.git
 RINAD_SITE_METHOD = git
 RINAD_INSTALL_STAGING = YES

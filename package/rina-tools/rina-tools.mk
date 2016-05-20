@@ -2,7 +2,7 @@
 # rina-tools                               #
 ############################################
 
-RINA_TOOLS_VERSION = master
+RINA_TOOLS_VERSION = kernel-update
 RINA_TOOLS_SITE = https://github.com/IRATI/stack.git
 RINA_TOOLS_SITE_METHOD = git
 RINA_TOOLS_INSTALL_STAGING = YES
