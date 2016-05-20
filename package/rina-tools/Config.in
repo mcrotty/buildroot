@@ -1,6 +1,7 @@
 config BR2_PACKAGE_RINA_TOOLS
         bool "rina-tools"
-        select BR2_PACKAGE_RINAD BR2_PACKAGE_LIBRINA
+        select BR2_PACKAGE_RINAD
+        select BR2_PACKAGE_LIBRINA
         help
           The rina-tools package is part of the IRATI stack.
 
