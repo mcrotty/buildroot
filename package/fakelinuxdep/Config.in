@@ -1,0 +1,4 @@
+config BR2_PACKAGE_FAKELINUXDEP
+        bool "fakelinuxdep"
+        help
+          A dirty workaround
