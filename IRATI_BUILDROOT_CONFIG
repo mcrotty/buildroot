@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.05-rc2-00033-g138f3f8-dirty Configuration
+# Buildroot 2016.05-rc2-00035-gdc7e29f-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -1343,6 +1343,7 @@ BR2_PACKAGE_CANFESTIVAL_ARCH_SUPPORTS=y
 # BR2_PACKAGE_CGIC is not set
 # BR2_PACKAGE_CPPZMQ is not set
 # BR2_PACKAGE_CZMQ is not set
+BR2_PACKAGE_FAKELINUXDEP=y
 # BR2_PACKAGE_FILEMQ is not set
 # BR2_PACKAGE_FLICKCURL is not set
 # BR2_PACKAGE_FREERADIUS_CLIENT is not set
