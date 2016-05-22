@@ -4,13 +4,13 @@
 
 LIBRINA_VERSION = kernel-update
 
-LIBRINA_SITE = https://github.com/IRATI/stack.git
-LIBRINA_SITE_METHOD = git
+#LIBRINA_SITE = https://github.com/IRATI/stack.git
+#LIBRINA_SITE_METHOD = git
+#LIBRINA_SUBDIR = librina
 
-#LIBRINA_SITE = output/build/fakelinuxdep-kernel-update
-#LIBRINA_SITE_METHOD = local
+LIBRINA_SITE = output/build/fakelinuxdep-kernel-update/librina
+LIBRINA_SITE_METHOD = local
 
-LIBRINA_SUBDIR = librina
 LIBRINA_INSTALL_STAGING = YES
 LIBRINA_INSTALL_TARGET = YES
 LIBRINA_DEPENDENCIES = fakelinuxdep libnl host-pkgconf openssl protobuf linux
