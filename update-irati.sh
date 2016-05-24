@@ -10,5 +10,6 @@ make librina-dirclean
 make rinad-dirclean
 make rina-tools-dirclean
 
-# recompile IRATI software
+# Recompile IRATI software. Modify package/fakelinuxdep/fakelinuxdep.mk to
+# speed-up download by using local repo
 make
