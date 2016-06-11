@@ -4,7 +4,7 @@
 
 # Use a version which includes 4.1.24 kernel, since it
 # can be compiled with gcc6
-FAKELINUXDEP_VERSION = kernel-update
+FAKELINUXDEP_VERSION = pristine-1.5
 
 FAKELINUXDEP_SITE = https://github.com/IRATI/stack.git
 

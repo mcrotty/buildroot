@@ -2,13 +2,13 @@
 # rina-tools                               #
 ############################################
 
-RINA_TOOLS_VERSION = kernel-update
+RINA_TOOLS_VERSION = pristine-1.5
 
 #RINA_TOOLS_SITE = https://github.com/IRATI/stack.git
 #RINA_TOOLS_SITE_METHOD = git
 #RINA_TOOLS_SUBDIR = rina-tools
 
-RINA_TOOLS_SITE = output/build/fakelinuxdep-kernel-update/rina-tools
+RINA_TOOLS_SITE = output/build/fakelinuxdep-pristine-1.5/rina-tools
 RINA_TOOLS_SITE_METHOD = local
 
 RINA_TOOLS_INSTALL_STAGING = YES

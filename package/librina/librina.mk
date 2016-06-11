@@ -2,13 +2,13 @@
 # librina				   #
 ############################################
 
-LIBRINA_VERSION = kernel-update
+LIBRINA_VERSION = pristine-1.5
 
 #LIBRINA_SITE = https://github.com/IRATI/stack.git
 #LIBRINA_SITE_METHOD = git
 #LIBRINA_SUBDIR = librina
 
-LIBRINA_SITE = output/build/fakelinuxdep-kernel-update/librina
+LIBRINA_SITE = output/build/fakelinuxdep-pristine-1.5/librina
 LIBRINA_SITE_METHOD = local
 
 LIBRINA_INSTALL_STAGING = YES
