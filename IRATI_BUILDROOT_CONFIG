@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2016.05-rc2-00045-g8cd18b7-dirty Configuration
+# Buildroot 2016.05-rc2-00046-g8f62994 Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -309,7 +309,7 @@ BR2_LINUX_KERNEL=y
 # BR2_LINUX_KERNEL_CUSTOM_HG is not set
 # BR2_LINUX_KERNEL_CUSTOM_SVN is not set
 BR2_LINUX_KERNEL_CUSTOM_LOCAL=y
-BR2_LINUX_KERNEL_CUSTOM_LOCAL_PATH="output/build/fakelinuxdep-kernel-update/linux"
+BR2_LINUX_KERNEL_CUSTOM_LOCAL_PATH="output/build/fakelinuxdep-pristine-1.5/linux"
 BR2_LINUX_KERNEL_VERSION="custom"
 # BR2_LINUX_KERNEL_USE_DEFCONFIG is not set
 BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
