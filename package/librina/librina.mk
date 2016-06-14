@@ -17,6 +17,6 @@ LIBRINA_DEPENDENCIES = fakelinuxdep libnl host-pkgconf openssl protobuf linux
 LIBRINA_LICENSE = LGPL
 LIBRINA_AUTORECONF = YES
 LIBRINA_AUTORECONF_OPTS = -i -f -Wall
-LIBRINA_CONF_OPTS = --disable-java-bindings --enable-debug --with-sysheaders=/home/vmaffione/git/nxw/buildroot/output/build/linux-custom/usr/include
+LIBRINA_CONF_OPTS = --disable-java-bindings --enable-debug --with-sysheaders=${LINUX_DIR}/usr/include
 
 $(eval $(autotools-package))
