@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cp IRATI_BUILDROOT_CONFIG .config
+if [ ! -f .config ]; then
+    cp IRATI_BUILDROOT_CONFIG .config
+fi
 
 # trigger new download
 rm dl/fakelinuxdep*
@@ -19,4 +21,4 @@ make rina-tgen-dirclean
 make
 
 # Now you should copy the images to the demonstrator location
-#cp output/images/* ~/git/vmaffione/nxw/irati-tests/buildroot
+#cp output/images/* ~/git/nxw/demonstrator/buildroot
