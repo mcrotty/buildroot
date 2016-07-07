@@ -1,0 +1,7 @@
+config BR2_PACKAGE_RINA_TGEN
+        bool "rina-tgen"
+        select BR2_PACKAGE_LIBRINA
+        help
+          The rina-tools package is part of the IRATI stack.
+
+          https://github.com/irati/stack
