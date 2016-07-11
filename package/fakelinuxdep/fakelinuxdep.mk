@@ -10,7 +10,7 @@ FAKELINUXDEP_SITE = https://github.com/IRATI/stack.git
 FAKELINUXDEP_SITE_METHOD = git
 
 # Enable these ones to fast download from a local repo
-#FAKELINUXDEP_SITE = file:///home/vmaffione/git/nxw/irati
+#FAKELINUXDEP_SITE = /home/vmaffione/git/nxw/irati
 #FAKELINUXDEP_SITE_METHOD = local
 
 FAKELINUXDEP_INSTALL_STAGING = YES
