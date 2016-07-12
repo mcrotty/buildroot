@@ -17,5 +17,14 @@ RINAD_PLUGINS_LICENSE = LGPL
 
 RINAD_PLUGINS_MODULE_SUBDIRS = plugins/cherish-urgency plugins/cong_avoidance plugins/lfa plugins/multipath plugins/red
 
+RINAD_PLUGINS_DIRNAMES = cherish-urgency cong_avoidance lfa multipath red
+
+define RINAD_PLUGINS_INSTALL_TARGET_CMDS
+	for plu in $(RINAD_PLUGINS_DIRNAMES) ; do \
+		manif=`ls -1 $(@D)/plugins/$${plu}/ | grep manifest` ; \
+		$(INSTALL) -D -m 0644 $(@D)/plugins/$${plu}/$${manif} $(TARGET_DIR)/lib/modules/4.1.24-irati/extra ; \
+	done
+endef
+
 $(eval $(kernel-module))
 $(eval $(generic-package))
