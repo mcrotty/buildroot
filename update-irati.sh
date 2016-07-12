@@ -4,6 +4,12 @@ if [ ! -f .config ]; then
     cp IRATI_BUILDROOT_CONFIG .config
 fi
 
+diff -puq IRATI_BUILDROOT_CONFIG .config
+if [ "$?" != "0" ]; then
+    echo "Warning: current .config is different from IRATI_BUILDROOT_CONFIG"
+    echo "         I will assume you know what you are doing :)"
+fi
+
 # trigger new download
 rm dl/fakelinuxdep*
 
