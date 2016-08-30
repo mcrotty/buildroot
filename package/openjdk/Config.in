@@ -1,0 +1,4 @@
+config BR2_PACKAGE_OPENJDK
+        bool "openjdk"
+        help
+          The openjdk version 8.
