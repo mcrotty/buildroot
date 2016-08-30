@@ -1,4 +1,5 @@
 config BR2_PACKAGE_OPENJDK
         bool "openjdk"
+        select BR2_PACKAGE_FREETYPE
         help
           The openjdk version 8.
