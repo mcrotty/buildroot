@@ -21,7 +21,7 @@ define OPENJDK_CONFIGURE_CMDS
 endef
 
 define OPENJDK_BUILD_CMDS
-	make -C $(@D)/openjdk DEBUG_BINARIES=true all
+	make -C $(@D)/openjdk DEBUG_BINARIES=true JOBS=1 LOG=trace all
 endef
 
 define OPENJDK_INSTALL_CMDS
