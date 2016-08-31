@@ -17,7 +17,7 @@ define OPENJDK_EXTRACT_CMDS
 endef
 
 define OPENJDK_CONFIGURE_CMDS
-	cd $(@D)/openjdk && chmod +x configure && ./configure
+	cd $(@D)/openjdk && chmod +x configure && ./configure --prefix=$(TARGET_DIR)
 endef
 
 define OPENJDK_BUILD_CMDS
